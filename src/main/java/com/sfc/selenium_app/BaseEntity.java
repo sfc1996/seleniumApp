@@ -1,4 +1,4 @@
-package com.sfc.auto_generator;
+package com.sfc.selenium_app;
 
 /**
  * Created by sufuchuan on 2019/9/13.

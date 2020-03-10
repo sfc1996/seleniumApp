@@ -1,4 +1,4 @@
-package com.sfc.auto_generator;
+package com.sfc.selenium_app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

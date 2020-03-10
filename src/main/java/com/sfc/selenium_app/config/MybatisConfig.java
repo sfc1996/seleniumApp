@@ -1,4 +1,4 @@
-package com.sfc.auto_generator.config;
+package com.sfc.selenium_app.config;
 
 import com.baomidou.mybatisplus.autoconfigure.ConfigurationCustomizer;
 import org.apache.ibatis.reflection.MetaObject;

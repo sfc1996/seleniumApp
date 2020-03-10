@@ -1,4 +1,4 @@
-package com.sfc.auto_generator;
+package com.sfc.selenium_app;
 
 import java.util.HashMap;
 import java.util.Map;

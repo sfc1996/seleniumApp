@@ -1,4 +1,4 @@
-package com.sfc.auto_generator;
+package com.sfc.selenium_app;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
@@ -36,7 +36,7 @@ public class GeneratorCode {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3307/autogenerator?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&skip-host-cache=true");
+        dsc.setUrl("jdbc:mysql://localhost:3307/selenium_app?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&skip-host-cache=true");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
@@ -46,7 +46,7 @@ public class GeneratorCode {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.sfc.auto_generator");
+        pc.setParent("com.sfc.selenium_app");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -83,11 +83,11 @@ public class GeneratorCode {
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
-        strategy.setColumnNaming(NamingStrategy.underline_to_camel);strategy.setSuperEntityClass("com.sfc.auto_generator.BaseEntity");
+        strategy.setColumnNaming(NamingStrategy.underline_to_camel);strategy.setSuperEntityClass("com.sfc.selenium_app.BaseEntity");
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         // 公共父类
-        strategy.setSuperControllerClass("com.sfc.auto_generator.BaseController");
+        strategy.setSuperControllerClass("com.sfc.selenium_app.BaseController");
         // 写于父类中的公共字段
         strategy.setSuperEntityColumns("id");
         strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
